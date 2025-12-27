@@ -1,0 +1,554 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Noise-Canceling Headphones",
+      "price": 279.99,
+      "category": "Electronics",
+      "rating": 2.5,
+      "reviews": 1243,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/4A90E2/FFFFFF?text=Headphones"
+    },
+    {
+      "id": 2,
+      "name": "Organic Cotton T-Shirt",
+      "price": 24.99,
+      "category": "Clothing",
+      "rating": 3.2,
+      "reviews": 89,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/7FBA00/FFFFFF?text=T-Shirt"
+    },
+    {
+      "id": 3,
+      "name": "Smart Watch Pro",
+      "price": 399.0,
+      "category": "Electronics",
+      "rating": 2.7,
+      "reviews": 2105,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/FF6B6B/FFFFFF?text=Smart+Watch"
+    },
+    {
+      "id": 4,
+      "name": "Yoga Mat Premium",
+      "price": 45.0,
+      "category": "Sports",
+      "rating": 1.8,
+      "reviews": 445,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/95E1D3/FFFFFF?text=Yoga+Mat"
+    },
+    {
+      "id": 5,
+      "name": "Stainless Steel Water Bottle",
+      "price": 32.99,
+      "category": "Sports",
+      "rating": 2.6,
+      "reviews": 678,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/A8E6CF/FFFFFF?text=Water+Bottle"
+    },
+    {
+      "id": 6,
+      "name": "Bluetooth Portable Speaker",
+      "price": 89.99,
+      "category": "Electronics",
+      "rating": 3.3,
+      "reviews": 892,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/FFD93D/FFFFFF?text=Speaker"
+    },
+    {
+      "id": 7,
+      "name": "Running Shoes",
+      "price": 129.99,
+      "category": "Clothing",
+      "rating": 4.4,
+      "reviews": 1567,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/6C5CE7/FFFFFF?text=Running+Shoes"
+    },
+    {
+      "id": 8,
+      "name": "Coffee Maker Deluxe",
+      "price": 149.99,
+      "category": "Home",
+      "rating": 4.5,
+      "reviews": 432,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/FDCB6E/FFFFFF?text=Coffee+Maker"
+    },
+    {
+      "id": 9,
+      "name": "Wireless Gaming Mouse",
+      "price": 79.99,
+      "category": "Electronics",
+      "rating": 4.6,
+      "reviews": 2341,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/E17055/FFFFFF?text=Gaming+Mouse"
+    },
+    {
+      "id": 10,
+      "name": "Denim Jacket",
+      "price": 89.99,
+      "category": "Clothing",
+      "rating": 4.1,
+      "reviews": 234,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/74B9FF/FFFFFF?text=Denim+Jacket"
+    },
+    {
+      "id": 11,
+      "name": "4K Webcam",
+      "price": 159.99,
+      "category": "Electronics",
+      "rating": 4.4,
+      "reviews": 889,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/55A3FF/FFFFFF?text=Webcam"
+    },
+    {
+      "id": 12,
+      "name": "Ceramic Non-Stick Pan Set",
+      "price": 119.99,
+      "category": "Home",
+      "rating": 4.7,
+      "reviews": 556,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/FD79A8/FFFFFF?text=Pan+Set"
+    },
+    {
+      "id": 13,
+      "name": "JavaScript: The Good Parts",
+      "price": 29.99,
+      "category": "Books",
+      "rating": 2.5,
+      "reviews": 1234,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/FFCC00/333333?text=JS+Book"
+    },
+    {
+      "id": 14,
+      "name": "Resistance Bands Set",
+      "price": 34.99,
+      "category": "Sports",
+      "rating": 4.3,
+      "reviews": 778,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/A29BFE/FFFFFF?text=Resistance+Bands"
+    },
+    {
+      "id": 15,
+      "name": "Mechanical Keyboard RGB",
+      "price": 189.99,
+      "category": "Electronics",
+      "rating": 4.8,
+      "reviews": 3456,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/6C5CE7/FFFFFF?text=Keyboard"
+    },
+    {
+      "id": 16,
+      "name": "Wool Winter Scarf",
+      "price": 45.0,
+      "category": "Clothing",
+      "rating": 4.6,
+      "reviews": 123,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/FFA502/FFFFFF?text=Scarf"
+    },
+    {
+      "id": 17,
+      "name": "Instant Pot 8-Quart",
+      "price": 129.99,
+      "category": "Home",
+      "rating": 4.7,
+      "reviews": 8923,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/FF6348/FFFFFF?text=Instant+Pot"
+    },
+    {
+      "id": 18,
+      "name": "Tennis Racket Pro",
+      "price": 199.99,
+      "category": "Sports",
+      "rating": 4.5,
+      "reviews": 234,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/3742FA/FFFFFF?text=Tennis+Racket"
+    },
+    {
+      "id": 19,
+      "name": "Clean Code: A Handbook",
+      "price": 44.99,
+      "category": "Books",
+      "rating": 4.6,
+      "reviews": 2156,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/45B7D1/FFFFFF?text=Clean+Code"
+    },
+    {
+      "id": 20,
+      "name": "Leather Wallet",
+      "price": 59.99,
+      "category": "Clothing",
+      "rating": 4.4,
+      "reviews": 445,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/8B4513/FFFFFF?text=Wallet"
+    },
+    {
+      "id": 21,
+      "name": "USB-C Hub 7-in-1",
+      "price": 49.99,
+      "category": "Electronics",
+      "rating": 4.2,
+      "reviews": 1678,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/778BEB/FFFFFF?text=USB+Hub"
+    },
+    {
+      "id": 22,
+      "name": "Bamboo Cutting Board Set",
+      "price": 39.99,
+      "category": "Home",
+      "rating": 4.5,
+      "reviews": 334,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/78E08F/FFFFFF?text=Cutting+Board"
+    },
+    {
+      "id": 23,
+      "name": "Dumbbells Set 40lbs",
+      "price": 89.99,
+      "category": "Sports",
+      "rating": 4.7,
+      "reviews": 1123,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/38ADA9/FFFFFF?text=Dumbbells"
+    },
+    {
+      "id": 24,
+      "name": "Silk Pillowcase Set",
+      "price": 79.99,
+      "category": "Home",
+      "rating": 4.6,
+      "reviews": 667,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/EE5A6F/FFFFFF?text=Pillowcase"
+    },
+    {
+      "id": 25,
+      "name": "Design Patterns: Elements of Reusable Software",
+      "price": 54.99,
+      "category": "Books",
+      "rating": 4.4,
+      "reviews": 987,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/F8B500/333333?text=Design+Patterns"
+    },
+    {
+      "id": 26,
+      "name": "Wireless Earbuds Pro",
+      "price": 199.99,
+      "category": "Electronics",
+      "rating": 4.5,
+      "reviews": 4532,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/C44569/FFFFFF?text=Earbuds"
+    },
+    {
+      "id": 27,
+      "name": "Hooded Sweatshirt",
+      "price": 54.99,
+      "category": "Clothing",
+      "rating": 4.3,
+      "reviews": 789,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/546DE5/FFFFFF?text=Hoodie"
+    },
+    {
+      "id": 28,
+      "name": "Electric Kettle 1.7L",
+      "price": 34.99,
+      "category": "Home",
+      "rating": 4.4,
+      "reviews": 445,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/FFA502/FFFFFF?text=Kettle"
+    },
+    {
+      "id": 29,
+      "name": "Foam Roller",
+      "price": 29.99,
+      "category": "Sports",
+      "rating": 4.6,
+      "reviews": 892,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/3DC1D3/FFFFFF?text=Foam+Roller"
+    },
+    {
+      "id": 30,
+      "name": "External SSD 1TB",
+      "price": 149.99,
+      "category": "Electronics",
+      "rating": 4.7,
+      "reviews": 2134,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/596275/FFFFFF?text=SSD"
+    },
+    {
+      "id": 31,
+      "name": "Canvas Sneakers",
+      "price": 49.99,
+      "category": "Clothing",
+      "rating": 4.1,
+      "reviews": 556,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/F5CD79/333333?text=Sneakers"
+    },
+    {
+      "id": 32,
+      "name": "Air Fryer 5.8QT",
+      "price": 89.99,
+      "category": "Home",
+      "rating": 4.6,
+      "reviews": 3421,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/EA8685/FFFFFF?text=Air+Fryer"
+    },
+    {
+      "id": 33,
+      "name": "The Pragmatic Programmer",
+      "price": 49.99,
+      "category": "Books",
+      "rating": 4.7,
+      "reviews": 1876,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/67E480/FFFFFF?text=Pragmatic"
+    },
+    {
+      "id": 34,
+      "name": "Jump Rope Professional",
+      "price": 19.99,
+      "category": "Sports",
+      "rating": 4.4,
+      "reviews": 445,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/F8B739/333333?text=Jump+Rope"
+    },
+    {
+      "id": 35,
+      "name": "Monitor Stand with Drawer",
+      "price": 69.99,
+      "category": "Electronics",
+      "rating": 4.5,
+      "reviews": 778,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/786FA6/FFFFFF?text=Monitor+Stand"
+    },
+    {
+      "id": 36,
+      "name": "Winter Boots Waterproof",
+      "price": 139.99,
+      "category": "Clothing",
+      "rating": 4.6,
+      "reviews": 892,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/303952/FFFFFF?text=Boots"
+    },
+    {
+      "id": 37,
+      "name": "Robot Vacuum Cleaner",
+      "price": 299.99,
+      "category": "Home",
+      "rating": 4.3,
+      "reviews": 5643,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/574B90/FFFFFF?text=Robot+Vacuum"
+    },
+    {
+      "id": 38,
+      "name": "Basketball Official Size",
+      "price": 39.99,
+      "category": "Sports",
+      "rating": 4.5,
+      "reviews": 234,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/F97F51/FFFFFF?text=Basketball"
+    },
+    {
+      "id": 39,
+      "name": "You Don't Know JS Series",
+      "price": 119.99,
+      "category": "Books",
+      "rating": 4.8,
+      "reviews": 3456,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/FFC048/333333?text=YDKJS"
+    },
+    {
+      "id": 40,
+      "name": "Power Bank 20000mAh",
+      "price": 49.99,
+      "category": "Electronics",
+      "rating": 4.4,
+      "reviews": 1234,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/58B19F/FFFFFF?text=Power+Bank"
+    },
+    {
+      "id": 41,
+      "name": "Sunglasses Polarized",
+      "price": 79.99,
+      "category": "Clothing",
+      "rating": 4.2,
+      "reviews": 667,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/2C2C54/FFFFFF?text=Sunglasses"
+    },
+    {
+      "id": 42,
+      "name": "Blender High-Speed",
+      "price": 199.99,
+      "category": "Home",
+      "rating": 4.7,
+      "reviews": 1123,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/25CCF7/FFFFFF?text=Blender"
+    },
+    {
+      "id": 43,
+      "name": "Protein Powder Vanilla 2lb",
+      "price": 54.99,
+      "category": "Sports",
+      "rating": 4.5,
+      "reviews": 2234,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/FFF222/333333?text=Protein"
+    },
+    {
+      "id": 44,
+      "name": "Algorithms to Live By",
+      "price": 34.99,
+      "category": "Books",
+      "rating": 4.6,
+      "reviews": 876,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/6A89CC/FFFFFF?text=Algorithms"
+    },
+    {
+      "id": 45,
+      "name": "Gaming Chair Ergonomic",
+      "price": 249.99,
+      "category": "Electronics",
+      "rating": 4.3,
+      "reviews": 1890,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/E74C3C/FFFFFF?text=Gaming+Chair"
+    },
+    {
+      "id": 46,
+      "name": "Rain Jacket Lightweight",
+      "price": 89.99,
+      "category": "Clothing",
+      "rating": 4.4,
+      "reviews": 445,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/3498DB/FFFFFF?text=Rain+Jacket"
+    },
+    {
+      "id": 47,
+      "name": "Smart Thermostat",
+      "price": 179.99,
+      "category": "Home",
+      "rating": 4.5,
+      "reviews": 2345,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/82CCDD/333333?text=Thermostat"
+    },
+    {
+      "id": 48,
+      "name": "Bicycle Helmet",
+      "price": 59.99,
+      "category": "Sports",
+      "rating": 4.7,
+      "reviews": 556,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/60A3BC/FFFFFF?text=Helmet"
+    },
+    {
+      "id": 49,
+      "name": "Refactoring: Improving the Design of Existing Code",
+      "price": 47.99,
+      "category": "Books",
+      "rating": 4.5,
+      "reviews": 1432,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/C0392B/FFFFFF?text=Refactoring"
+    },
+    {
+      "id": 50,
+      "name": "Tablet Stand Adjustable",
+      "price": 29.99,
+      "category": "Electronics",
+      "rating": 4.4,
+      "reviews": 889,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/8E44AD/FFFFFF?text=Tablet+Stand"
+    },
+    {
+      "id": 51,
+      "name": "Backpack Water-Resistant",
+      "price": 69.99,
+      "category": "Clothing",
+      "rating": 4.6,
+      "reviews": 1234,
+      "inStock": false,
+      "image": "https://placehold.co/300x300/27AE60/FFFFFF?text=Backpack"
+    },
+    {
+      "id": 52,
+      "name": "Weighted Blanket 15lbs",
+      "price": 89.99,
+      "category": "Home",
+      "rating": 4.5,
+      "reviews": 2456,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/E67E22/FFFFFF?text=Blanket"
+    },
+    {
+      "id": 53,
+      "name": "Swimming Goggles Anti-Fog",
+      "price": 24.99,
+      "category": "Sports",
+      "rating": 4.3,
+      "reviews": 334,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/1ABC9C/FFFFFF?text=Goggles"
+    },
+    {
+      "id": 54,
+      "name": "Structure and Interpretation of Computer Programs",
+      "price": 59.99,
+      "category": "Books",
+      "rating": 4.7,
+      "reviews": 654,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/9B59B6/FFFFFF?text=SICP"
+    },
+    {
+      "id": 55,
+      "name": "Laptop Cooling Pad",
+      "price": 39.99,
+      "category": "Electronics",
+      "rating": 4.2,
+      "reviews": 1123,
+      "inStock": true,
+      "image": "https://placehold.co/300x300/2ECC71/FFFFFF?text=Cooling+Pad"
+    }
+  ]
+}
