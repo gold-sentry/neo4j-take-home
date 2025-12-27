@@ -92,8 +92,6 @@ function App() {
     setFilters(INITIAL_FILTERS)
   }
 
-  const handleSearchChange = (query) => setSearchQuery(query)
-
   const handleFilterChange = (key, value) => {
     setFilters((prev) => ({ ...prev, [key]: value }))
   }
@@ -104,30 +102,39 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">
-          Product Catalog
-        </h1>
+      <div className="sticky top-0 z-20 bg-gray-50 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">
+            Product Catalog
+          </h1>
 
-        {status === STATUS.SUCCESS && <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-          <div className='w-full sm:flex-1 sm:max-w-md'>
-            <SearchInput value={searchQuery} onChange={handleSearchChange} onClear={handleClearSearch} />
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+            <div className="w-full sm:flex-1 sm:max-w-lg">
+              <SearchInput
+                value={searchQuery}
+                onChange={setSearchQuery}
+                onClear={handleClearSearch}
+              />
+            </div>
+            <p className="text-gray-600 text-sm whitespace-nowrap">
+              {filteredProducts.length} products
+            </p>
           </div>
-          <p className="text-gray-600 text-sm whitespace-nowrap">
-            {filteredProducts.length} of {products.length} products
-          </p>
-        </div>}
 
+          <FilterPanel
+            filters={filters}
+            onFilterChange={handleFilterChange}
+            categories={categories}
+            onClearFilters={handleClearFilters}
+          />
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 py-6">
         {status === STATUS.LOADING && <Loader />}
-
-        {status === STATUS.ERROR && <ErrorMessage message={error} onRetry={fetchProducts} />}
-
-        {status === STATUS.SUCCESS && <FilterPanel
-          filters={filters}
-          onFilterChange={handleFilterChange}
-          categories={categories}
-          onClearFilters={handleClearFilters}
-        />}
+        {status === STATUS.ERROR && (
+          <ErrorMessage message={error} onRetry={() => window.location.reload()} />
+        )}
         {status === STATUS.SUCCESS && <ProductGrid products={filteredProducts} />}
       </div>
     </div>

@@ -6,7 +6,13 @@ export const INITIAL_FILTERS = {
     inStockOnly: false,
 }
 
-export const FILTER_KEYS = Object.keys(INITIAL_FILTERS)
+export const FILTER_KEYS = {
+    MIN_PRICE: 'minPrice',
+    MAX_PRICE: 'maxPrice',
+    CATEGORIES: 'categories',
+    MIN_RATING: 'minRating',
+    IN_STOCK_ONLY: 'inStockOnly',
+}
 
 export const RATING_OPTIONS = [
     { value: 0, label: 'All Ratings' },

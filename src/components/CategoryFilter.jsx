@@ -1,22 +1,14 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
+import CategoryList from './CategoryList'
+import useOnClickOutside from '../hooks/useOnClickOutside'
 
 const CategoryFilter = ({ categories, selected, onChange }) => {
     const [isOpen, setIsOpen] = useState(false)
     const dropdownRef = useRef(null)
 
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setIsOpen(false)
-            }
-        }
-
-        document.addEventListener('mousedown', handleClickOutside)
-        return () => document.removeEventListener('mousedown', handleClickOutside)
-    }, [])
+    useOnClickOutside(dropdownRef, () => setIsOpen(false))
 
     const toggleCategory = (category) => {
-        console.log(category)
         const isAlreadySelected = selected.includes(category)
         const updated = isAlreadySelected
             ? selected.filter((c) => c !== category)
@@ -50,23 +42,11 @@ const CategoryFilter = ({ categories, selected, onChange }) => {
             </button>
 
             {isOpen && (
-                <div className="absolute z-10 mt-1 w-full bg-white border border-gray-300 rounded-lg shadow-lg py-1">
-                    {categories.map((category) => (
-                        <div
-                            key={category}
-                            className="flex items-center gap-2 px-3 py-2 hover:bg-gray-50 cursor-pointer"
-                            onClick={() => toggleCategory(category)}
-                        >
-                            <input
-                                type="checkbox"
-                                checked={selected.includes(category)}
-                                readOnly
-                                className="w-4 h-4 text-blue-600 rounded pointer-events-none"
-                            />
-                            <span className="text-sm text-gray-700">{category}</span>
-                        </div>
-                    ))}
-                </div>
+                <CategoryList
+                    categories={categories}
+                    selected={selected}
+                    toggleCategory={toggleCategory}
+                />
             )}
         </div>
     )
