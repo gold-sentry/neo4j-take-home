@@ -23,7 +23,7 @@ const FilterPanel = ({
             <div className="flex items-center justify-between mb-4">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="flex items-center gap-2 lg:pointer-events-none"
+                    className="flex items-center gap-2 lg:pointer-events-none cursor-pointer"
                 >
                     <h2 className="text-lg font-semibold text-gray-800">Filters</h2>
                     <svg
