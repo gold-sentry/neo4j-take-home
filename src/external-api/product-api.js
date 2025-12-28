@@ -12,7 +12,7 @@ export class ProductAPI {
     await new Promise((resolve) => setTimeout(resolve, delay));
 
     // Simulate occasional network errors (5% chance)
-    if (Math.random() < 0.5) {
+    if (Math.random() < 0.05) {
       throw new Error('Network error: Failed to fetch products');
     }
 

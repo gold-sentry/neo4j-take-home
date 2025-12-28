@@ -124,7 +124,7 @@ function App() {
               />
             </div>
             <p className="text-gray-600 text-sm whitespace-nowrap">
-              {filteredProducts.length} products
+              {filteredProducts.length}  of {products.length} products
             </p>
           </div>
 
