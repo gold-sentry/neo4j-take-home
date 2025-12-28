@@ -123,9 +123,9 @@ function App() {
                 onClear={handleClearSearch}
               />
             </div>
-            <p className="text-gray-600 text-sm whitespace-nowrap">
+            {products.length > 0 && <p className="text-gray-600 text-sm whitespace-nowrap">
               {filteredProducts.length}  of {products.length} products
-            </p>
+            </p>}
           </div>
 
           <FilterPanel
