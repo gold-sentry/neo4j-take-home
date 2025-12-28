@@ -22,30 +22,40 @@ function App() {
   const debouncedSearch = useDebounce(searchQuery, DEBOUNCE_DELAY)
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    let isCancelled = false
+
+    const fetchData = async () => {
       setStatus(STATUS.LOADING)
       setError(null)
+
       try {
-        const data = await ProductAPI.getProducts()
-        setProducts(data)
+        const [productsResult, categoriesResult] = await Promise.allSettled([
+          ProductAPI.getProducts(),
+          ProductAPI.getCategories(),
+        ])
+
+        if (isCancelled) return
+
+        if (productsResult.status === 'rejected') {
+          throw new Error(productsResult.reason?.message || 'Failed to fetch products')
+        }
+
+        setProducts(productsResult.value)
+        setCategories(categoriesResult.status === 'fulfilled' ? categoriesResult.value : [])
         setStatus(STATUS.SUCCESS)
       } catch (err) {
-        setError(err.message)
-        setStatus(STATUS.ERROR)
+        if (!isCancelled) {
+          setError(err.message)
+          setStatus(STATUS.ERROR)
+        }
       }
     }
 
-    const fetchCategories = async () => {
-      try {
-        const data = await ProductAPI.getCategories()
-        setCategories(data)
-      } catch {
-        console.warn('Failed to fetch categories')
-      }
-    }
+    fetchData()
 
-    fetchProducts()
-    fetchCategories()
+    return () => {
+      isCancelled = true
+    }
   }, [])
 
   const filteredProducts = useMemo(() => {
