@@ -26,3 +26,5 @@ I also added a sticky header for the search and filter section to ensure that th
 
 ### Testing
 I have not added test to every component, as I have only done this for components that have critical functionality rather than presentation components.
+
+In the interest of time, I have only selected the components by text ideally i would using use a data-testid to identify the components.
