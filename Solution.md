@@ -4,6 +4,8 @@ https://neo4j-take-home-assignent-genai.vercel.app/
 The code can be found on GitHub at the following repository:
 https://github.com/joshuaalonge/neo4j-take-home-assignent-genai  (private - added the reviewer)
 
+Stackblitz: https://stackblitz.com/~/github.com/gold-sentry/neo4j-take-home
+
 ## During the development process, I added the following libraries to the project:
 - TailwindCSS
 - Testing Library
