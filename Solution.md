@@ -28,3 +28,13 @@ I also added a sticky header for the search and filter section to ensure that th
 I have not added test to every component, as I have only done this for components that have critical functionality rather than presentation components.
 
 In the interest of time, I have only selected the components by text ideally i would using use a data-testid to identify the components.
+
+
+### Assumptions Made
+    - The dataset would be small enough to fit into memory, In the this case 55 items but would consider using pagination or virtualization in cases where the dataset is too large.
+    - The language used is English
+    - The application is deployed on Vercel
+    - Assumed we could use tailwind for styling and responsiveness handling
+    - Assumption about the search is that we require a fuzzy search instead of an exact match or prefix match
+
+
