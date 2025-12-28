@@ -62,11 +62,9 @@ describe('CategoryFilter', () => {
     it('should closes dropdown when clicking outside', () => {
         render(<CategoryFilter categories={categories} selected={[]} onChange={onChange} />)
 
-        // Open
         fireEvent.click(screen.getByRole('button'))
         expect(screen.getByText('Electronics')).toBeInTheDocument()
 
-        // Click outside (e.g., document body)
         fireEvent.mouseDown(document.body)
 
         expect(screen.queryByText('Electronics')).not.toBeInTheDocument()

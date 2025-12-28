@@ -21,32 +21,29 @@ function App() {
 
   const debouncedSearch = useDebounce(searchQuery, DEBOUNCE_DELAY)
 
-  const fetchProducts = async () => {
-    setStatus(STATUS.LOADING)
-    setError(null)
-
-    try {
-      const products = await ProductAPI.getProducts()
-      setProducts(products)
-      setStatus(STATUS.SUCCESS)
-    } catch (err) {
-      setError(err.message || 'Failed to fetch products')
-      setStatus(STATUS.ERROR)
-    }
-  }
-
-  const fetchCategories = async () => {
-    try {
-      const data = await ProductAPI.getCategories()
-      setCategories(data)
-    } catch {
-      // My idea here is to gather metrics on the number of times this fails
-      console.warn('Failed to fetch categories')
-    }
-  }
-
-
   useEffect(() => {
+    const fetchProducts = async () => {
+      setStatus(STATUS.LOADING)
+      setError(null)
+      try {
+        const data = await ProductAPI.getProducts()
+        setProducts(data)
+        setStatus(STATUS.SUCCESS)
+      } catch (err) {
+        setError(err.message)
+        setStatus(STATUS.ERROR)
+      }
+    }
+
+    const fetchCategories = async () => {
+      try {
+        const data = await ProductAPI.getCategories()
+        setCategories(data)
+      } catch {
+        console.warn('Failed to fetch categories')
+      }
+    }
+
     fetchProducts()
     fetchCategories()
   }, [])
