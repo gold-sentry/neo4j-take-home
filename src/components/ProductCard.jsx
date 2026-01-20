@@ -5,7 +5,7 @@ const ProductCard = ({ product }) => {
     const { name, price, image, rating, inStock, reviews } = product
 
 
-    const getStockStatus = (stock) => {
+    const getStockStatus = () => {
         if (!inStock) {
             return { text: 'Out of Stock', color: 'text-red-600 bg-red-50' }
         }
@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
         return { text: 'In Stock', color: 'text-green-600 bg-green-50' }
     }
 
-    const stockStatus = getStockStatus(inStock)
+    const stockStatus = getStockStatus()
 
     return (
         <div

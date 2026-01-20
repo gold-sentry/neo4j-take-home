@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ProductAPI } from '../external-api/product-api';
 import { STATUS } from '../constants/status';
+import asyncWithRetry from '../utils/fetchWithRetry';
 
 export const useProductData = () => {
     const [products, setProducts] = useState([]);
@@ -17,8 +18,8 @@ export const useProductData = () => {
 
             try {
                 const [productsResult, categoriesResult] = await Promise.allSettled([
-                    ProductAPI.getProducts(),
-                    ProductAPI.getCategories(),
+                    asyncWithRetry(ProductAPI.getProducts),
+                    asyncWithRetry(ProductAPI.getCategories),
                 ]);
 
                 if (isCancelled) return;
