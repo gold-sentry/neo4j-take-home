@@ -21,3 +21,5 @@ export const RATING_OPTIONS = [
     { value: 2, label: '2 Stars & Up' },
     { value: 1, label: '1 Star & Up' },
 ]
+
+export const ALL_CATEGORIES = 'All Categories'

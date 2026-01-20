@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import CategoryList from './CategoryList'
 import useOnClickOutside from '../hooks/useOnClickOutside'
+import { ALL_CATEGORIES } from '../constants/filters'
 
 const CategoryFilter = ({ categories, selected, onChange, 'data-testid': testId }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +18,7 @@ const CategoryFilter = ({ categories, selected, onChange, 'data-testid': testId 
     }
 
     const getDisplayText = () => {
-        if (selected.length === 0) return 'All Categories'
+        if (selected.length === 0) return ALL_CATEGORIES
         if (selected.length === 1) return selected[0]
         return `${selected.length} selected`
     }
