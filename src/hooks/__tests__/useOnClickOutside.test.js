@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
 import { renderHook, act } from '@testing-library/react'
-import useOnClickOutside from './useOnClickOutside'
+import useOnClickOutside from '../useOnClickOutside'
 
 describe('useOnClickOutside', () => {
     afterEach(() => {

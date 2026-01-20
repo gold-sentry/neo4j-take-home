@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import CategoryFilter from './CategoryFilter'
+import CategoryFilter from '../CategoryFilter'
 
 describe('CategoryFilter', () => {
     const categories = ['Electronics', 'Books', 'Clothing']

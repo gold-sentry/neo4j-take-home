@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import FilterPanel from './FilterPanel'
-import { FILTER_KEYS } from '../constants/filters'
+import FilterPanel from '../FilterPanel'
+import { FILTER_KEYS } from '../../constants/filters'
 
 describe('FilterPanel', () => {
     const mockCategories = ['Electronics', 'Books', 'Clothing']
